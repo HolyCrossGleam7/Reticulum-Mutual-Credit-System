@@ -1,0 +1,28 @@
+{
+  "name": "reticulum-mutual-credit",
+  "transport": "Reticulum",
+  "interfaces": [
+    "local",
+    "tor",
+    "i2p"
+  ],
+  "credit_limits": {
+    "default": 1000,
+    "pair_specific": true
+  },
+  "minimum_quorum": 2,
+  "witness_timeout_seconds": 15,
+  "anchor_interval_transactions": 10,
+  "anchor_interval_hours": 24,
+  "stamp_costs": {
+    "create_credit_line": 1.0,
+    "register_witness": 2.0,
+    "publish_anchor": 1.0,
+    "ban_recovery": 5.0
+  },
+  "security": {
+    "fail_closed": true,
+    "persistent_bans": true,
+    "opt_in_blackholes": true
+  }
+}

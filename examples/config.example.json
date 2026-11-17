@@ -1,0 +1,21 @@
+"""Example witness node.
+
+A dedicated witness node provides independent verification for pair-state claims,
+anchor checks, and historical proof requests.
+"""
+
+from __future__ import annotations
+
+
+def main() -> None:
+    """Demonstrate a dedicated witness node being started."""
+
+    print({
+        "role": "witness",
+        "status": "ready",
+        "independence_group": "group-alpha",
+    })
+
+
+if __name__ == "__main__":
+    main()
